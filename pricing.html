@@ -125,6 +125,8 @@
             </div>
         </div>
     </div>
+    <div autoplay muted loop id="video-container">
+    </div>
     <video style="z-index: -1;" autoplay muted loop id="myVideo">
         <source src="lg.mp4" type="video/mp4">
     </video>
@@ -170,9 +172,16 @@
                                     .nav-link {
                                         display: inline-flex;
                                     }
-
+                                    #video-container {
+                                        height: 100%;
+                                        width: 100%;
+                                        background-image: url("lg1080.mp4");
+                                        position: fixed;
+                                        z-index: 0;
+                                    }
                                     /* Style the video: 100% width and height to cover the entire window */
                                     #myVideo {
+                                        z-index: -1;
                                         position: fixed;
                                         right: 0;
                                         bottom: 0;
