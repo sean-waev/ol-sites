@@ -358,7 +358,7 @@
 
                                 @media (max-width:767px) {
                                     .compareBox {
-                                        display: grid;
+                                        display: flex;
                                     }
 
                                     .internalBox {
@@ -423,6 +423,58 @@
 
 
                                     }
+                                    @media (max-width:767px) {
+
+
+                                    .compareBox {
+                                        display: flex !important;
+                                        height: auto !important;
+                                    }
+
+                                    .internalBox {
+                                        width: auto !important;
+                                        margin: 2vw !important;
+                                        min-height: 0px !important;
+
+                                        height: auto !important;
+                                    }
+
+                                    .internalTopFont {
+                                        font-size: 18px !important;
+                                        padding-left: 20px;
+                                        padding-right: 20px;
+
+                                    }
+
+                                    .internalBottomFont {
+                                        font-size: 18px !important;
+                                        padding-left: 20px;
+                                        padding-right: 20px;
+                                    }
+
+                                    .internalFont {
+                                        font-size: 36px !important;
+                                        /* margin-bottom: 3vw; */
+                                    }
+
+                                    .coll-left {
+                                        font-size: 16px !important;
+                                    }
+
+                                    .coll-right {
+                                        font-size: 30px !important;
+
+                                    }
+                                }
+                                    .rightBox {
+                                    border: solid;
+                                    border-width: 1vw;
+                                    color: white;
+                                }
+                                    
+
+
+                                    
                                 }
                             </style>
                             <box class="compareBox" style="justify-content: center !important;">
@@ -430,17 +482,17 @@
     flex-direction: column;
     justify-content: space-between;
 ">
-                                    <h1 class="internalTopFont">Top
+                                    <h1 class="internalTopFont coll-left">Top
                                         Competitor:</h1>
                                     <h1 class="internalFont">374 ms</h1>
                                     <h4 class="internalBottomFont">response time*</h4>
                                     <h1 class="internalFont">$10k</h1>
                                     <h4 class="internalBottomFont">avg project price**</h4>
                                 </div>
-                                <div class="internalBox" style="background: rgba(5, 5, 120, 0.4);    text-align: center; display: flex;
+                                <div class="internalBox rightBox" style="background: rgba(5, 5, 120, 0.4);    text-align: center; display: flex;
                                     flex-direction: column;
                                     justify-content: space-between;">
-                                    <h1 class="internalTopFont">0lght:</h1>
+                                    <h1 class="internalTopFont coll-right">0lght:</h1>
                                     <h1 class="internalFont">1 ms</h1>
                                     <h4 class="internalBottomFont">response time*</h4>
                                     <h1 class="internalFont">$3k</h1>
